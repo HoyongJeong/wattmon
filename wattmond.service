@@ -1,0 +1,14 @@
+[Unit]
+Description=CPU Package Watt Monitor
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+ExecStart=/opt/wattmon/wattmond.sh
+
+[Install]
+WantedBy=multi-user.target
