@@ -20,7 +20,7 @@ do
 
 	if [ ${NUMBER} -gt 4 ]
 	then
-		if [ ${WATT} -gt 0 ]
+		if (( $(echo "${WATT} > 0" |bc -l) ))
 		then
 			influx write -b ${BUCKET} -o ${ORG} -t=${TOKEN} 'wattmon,host='${HOSTNAME}' watt='${WATT}
 		fi
