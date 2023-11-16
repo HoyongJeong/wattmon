@@ -4,9 +4,9 @@ PATH_UJ=/sys/devices/virtual/powercap/intel-rapl/intel-rapl:0/energy_uj
 CURR_UJ=`cat ${PATH_UJ}`
 MIL=1000000
 HOSTNAME=`hostname`
-BUCKET=telegraf
-ORG=xDots
-TOKEN=-HlBuFRpvFCO82dTtB6aMuWkoxc1UOYtn1tBBcc_QaB-uK7CmH8wvAlaP-zs8x_uathHPRIKQGsv1UIcx-uGxQ==
+BUCKET=<your-bucket>
+ORG=<your-organizaion>
+TOKEN=<your-token>
 NUMBER=0
 
 sleep 1
