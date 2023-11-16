@@ -48,7 +48,7 @@ InfluxDB v2 CLI client is required.
 ```sh
 git clone https://github.com/HoyongJeong/wattmon
 cd wattmon
-sudo ln -s wattmond.service /etc/systemd/system/
+sudo ln -s `pwd`/wattmond.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl start wattmond.service
 ```
