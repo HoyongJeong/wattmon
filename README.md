@@ -26,6 +26,9 @@
     <li>
       <a href="#installation">Installation</a>
     </li>
+    <li>
+      <a href="how-it-works">How It Works</a>
+    </li>
   </ol>
 </details>
 
@@ -34,6 +37,17 @@
 ## About The Project
 
 Telegraf is a nice application to help you collect metrics from your system. However, the function to monitor the power of AMD series CPUs is inconvenient. This is a simple shell script to measure power draw by CPU package in a Linux system and send the measurement to Influx DB server.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- HOW IT WORKS -->
+## How It Works
+
+Most modern CPUs support Running Average Power Limit (RAPL) interfaces for reporting the accumulated energy consumption. It primarily serves to manage and monitor power consumption and thermal output. AMD's Zen supports a Model-Specific Registers (MSR) interface that is semi-compatible with RAPL.
+In the latest Ubuntu machine which has an AMD CPU (5900X), I could read the current cumulative energy counter in micro joules by printing out content in `/sys/devices/virtual/powercap/intel-rapl/intel-rapl:0/energy_uj`. In every second, my script differentiates the energy counter in order to calculate power in watt.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
