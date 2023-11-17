@@ -24,10 +24,10 @@
       <a href="#about-the-project">About The Project</a>
     </li>
     <li>
-      <a href="#installation">Installation</a>
+      <a href="#how-it-works">How It Works</a>
     </li>
     <li>
-      <a href="how-it-works">How It Works</a>
+      <a href="#installation">Installation</a>
     </li>
   </ol>
 </details>
